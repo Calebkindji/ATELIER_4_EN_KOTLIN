@@ -89,7 +89,7 @@ fun CountryApp(modifier: Modifier = Modifier) {
     }
 }
 
-@Preview(showBackground = true)
+@Preview
 @Composable
 fun CountryPreview() {
     TP_AffirmationTheme {
