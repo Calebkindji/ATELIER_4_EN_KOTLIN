@@ -12,19 +12,19 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.tp_affirmation.data.DataSource
 import com.example.tp_affirmation.model.Country
 import com.example.tp_affirmation.ui.theme.TP_AffirmationTheme
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            TP_AffirmationTheme{
+            TP_AffirmationTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     CountryApp(modifier = Modifier.padding(innerPadding))
                 }
@@ -60,6 +60,10 @@ fun CountryCard(country: Country, modifier: Modifier = Modifier) {
                     text = "Capitale: ${country.capital}",
                     style = MaterialTheme.typography.bodyMedium
                 )
+                Text(
+                    text = "Code: ${country.code}",
+                    style = MaterialTheme.typography.bodySmall
+                )
             }
         }
     }
@@ -88,7 +92,7 @@ fun CountryApp(modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun CountryPreview() {
-    TP_AffirmationTheme{
+    TP_AffirmationTheme {
         CountryApp()
     }
 }
