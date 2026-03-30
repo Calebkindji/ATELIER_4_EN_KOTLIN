@@ -6,5 +6,6 @@ data class Country(
     val name: String,
     val capital: String,
     val code: String,
-    @DrawableRes val flagResId: Int
+    @DrawableRes val flagResId: Int,
+    val description: String
 )

@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Stylized Map Outline -->
+    <path
+        android:fillAlpha="0.1"
+        android:fillColor="#000000"
+        android:strokeColor="#000000"
+        android:strokeWidth="2"
+        android:pathData="M30,40 L25,50 L35,65 L30,80 L50,85 L65,75 L80,80 L85,60 L75,45 L80,30 L60,25 L45,35 Z" />
+    <!-- Location Pin -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M50,30c-5.5,0 -10,4.5 -10,10c0,7.5 10,17.5 10,17.5s10,-10 10,-17.5c0,-5.5 -4.5,-10 -10,-10zM50,44c-2.2,0 -4,-1.8 -4,-4s1.8,-4 4,-4s4,1.8 4,4s-1.8,4 -4,4z" />
+    <!-- A small dot (converted from circle to path) -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M40,60m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+</vector>
