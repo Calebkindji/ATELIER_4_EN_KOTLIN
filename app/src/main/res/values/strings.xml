@@ -2,5 +2,6 @@
     <string name="app_name">TP_Affirmation</string>
     <string name="app_display_name">M\'bokas</string>
     <string name="expand_button_content_description">Voir plus ou moins d\'informations sur ce country.</string>
-
+    <string name="welcome_text">karibu</string>
+    <string name="see_countries">voir les pays</string>
 </resources>
